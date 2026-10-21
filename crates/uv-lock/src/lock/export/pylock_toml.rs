@@ -677,6 +677,7 @@ impl ExportPackages {
                         cache,
                         &dist,
                         hashes.as_slice(),
+                        archive.size,
                     )
                     .await
                     .map_err(|err| {
